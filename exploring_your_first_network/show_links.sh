@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ip -o link show
+ip -br link show
