@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ip -4 addr link | grep host
+ip -4 addr show | grep host
