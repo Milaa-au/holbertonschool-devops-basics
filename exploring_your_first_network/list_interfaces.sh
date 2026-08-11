@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ip link
+ip -br addr show
