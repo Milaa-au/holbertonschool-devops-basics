@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ip -4 addr show | grep host | awk '{print $2}' | cut -d'/' -f1
+ping -c 4 $(ip -4 addr show | grep 'scope host' | grep -oP 'inet \K[0-9.]+' | head -1)
